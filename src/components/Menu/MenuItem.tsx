@@ -8,12 +8,14 @@ interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({item}) => {
+    // State for controlling submenu visibility
     const [isSubMenuOpen, SetIsSubMenuOpen] = useState(false);
 
     const toggleSubMenu = () => {
         SetIsSubMenuOpen(!isSubMenuOpen);
     }
 
+    // Check if menu item has submenu items
     const hasSubMenu = item.items && item.items.length > 0;
 
     return(
