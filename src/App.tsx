@@ -7,7 +7,7 @@ import PopularNews from './pages/PopularNews';
 import About from './pages/About';
 import Team from './pages/Team';
 import Contacts from './pages/Contacts';
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
   return (
